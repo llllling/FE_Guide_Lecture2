@@ -219,3 +219,22 @@
 - client 에서 사용할 데이터를 직접 스키마 정의
 
 * Rest API는 직접 스키마 정의 못함. 이를 사용함으로 써 read에 들어가는 리소스를 많이 줄여줌.
+
+## 강의 예제 프로젝트 진행하면서 memo
+
+- 모든 프로젝트 시작 시 README 작성은 필수!! => 예제 프로젝트의 README 템플릿 참고
+
+* Babel 설정은 가급적이면 하라 !
+
+  - NextJS에선 기본적으로 IE11을 지원하지만, Babel에서 프리셋을 별도로 설정해줬을 때 빌드되는 결과물이 달라짐. 그래서 반드시 설정해줘야 IE11이 디폴트로 대응이 됨.
+  - 완전 최근 스팩들도 빌트인 시점을 지원안하는 경우가 있음. 이런 케이스들도 방지하기 위해
+
+  * Nextjs custom babel 참고(https://nextjs.org/docs/pages/building-your-application/configuring/babel)
+
+* exlint는 airbnb꺼 설치해서 사용
+  ```
+  npm install eslint-config-airbnb-typescript \
+            @typescript-eslint/eslint-plugin@^6.0.0 \
+            @typescript-eslint/parser@^6.0.0 \
+            --save-dev
+  ```
