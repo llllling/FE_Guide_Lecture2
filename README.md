@@ -260,3 +260,6 @@
 ```
   npm install babel-jest identity-obj-proxy
 ```
+
+- 모든 프로젝트의 배포는 가장 중요한 부분 ! 해당 프로젝트에선 dockerfile 만들어서 사용
+  - 도커컨테이너를 EKS같은 컨테이너 서비스에 배포만 하면 바로 서비스가 노출됨.
