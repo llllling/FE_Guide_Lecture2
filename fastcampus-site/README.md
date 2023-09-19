@@ -2,7 +2,7 @@
 
 ## Contributor
 
-- @Heizle (미성)
+- @llllling (미성)
 
 ## Tech Requirement (Tech Stack)
 
