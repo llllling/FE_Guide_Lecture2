@@ -245,3 +245,18 @@
   * @techhtml => 이 저장소내에서 일어나는 모든 일에 대해 리뷰어로 붙게 됨
   ```
 * 코드오너를 설정하는 것과 리뷰어를 설정하는 것의 차이 ? => 코드오너를 설정해두면 github에 프로텍션룰에 코드오너가 리뷰를 남겼을 때에만 머지를 시킬 수 있는 항목같은 게 존재, 단순히 리뷰어를 지정하는 것과 다름. 코드오너가 저장소의 모든 이슈들을 신경쓰기 때문에 이런식으로 코드오너를 지정해두는게 추후에 굉장히 많은 도움이 됨
+* 테스트는 nextjs 공식문서 참고해서 설치(https://nextjs.org/docs/pages/building-your-application/optimizing/testing#setting-up-jest-with-the-rust-compiler)
+
+```
+  npm install --save-dev jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom
+
+```
+
+- 커스텀 .babelrc를 사용할 경우 nextjs는 컴파일러를 사용안한다구함.. ?
+  그래서 위 링크의 Setting up Jest(width Babel)참고해서 진행
+
+* 위 명령어에 추가로 아래 모듈 설치
+
+```
+  npm install babel-jest identity-obj-proxy
+```
