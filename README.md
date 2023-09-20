@@ -238,7 +238,7 @@
             @typescript-eslint/parser@^6.0.0 \
             --save-dev
   ```
-* .github폴더 생성 후 CODEOWNERS 작성
+* .github 폴더 생성 후 CODEOWNERS 작성
   - CODEOWNERS파일은 무엇이냐 ? => pr을 날리거나 개발을 진행할 때 이사람이 코드의 관리자다라는 걸 지정해주는 파일
   * 이를 활용하면 코드리뷰를 위해 PR 생성 시, 작업한 파일에 관련된 Owner들을 자동으로 PR(Pull Request) Reviewer로 지정할 수 있다.
   ```
