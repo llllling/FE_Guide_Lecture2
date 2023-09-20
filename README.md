@@ -229,7 +229,7 @@
   - NextJS에선 기본적으로 IE11을 지원하지만, Babel에서 프리셋을 별도로 설정해줬을 때 빌드되는 결과물이 달라짐. 그래서 반드시 설정해줘야 IE11이 디폴트로 대응이 됨.
   - 완전 최근 스팩들도 빌트인 시점을 지원안하는 경우가 있음. 이런 케이스들도 방지하기 위해
 
-  * Nextjs custom babel 참고(https://nextjs.org/docs/pages/building-your-application/configuring/babel)
+  * Nextjs custom babel참고(https://nextjs.org/docs/pages/building-your-application/configuring/babel)
 
 * exlint는 airbnb꺼 설치해서 사용
   ```
