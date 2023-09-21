@@ -28,10 +28,10 @@ jobs:
     #
     steps:
       # This step uses the `actions/checkout` action to download a copy of your repository on the runner.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
       # This step uses the `actions/setup-node` action to set up Node.js for each version indicated by the `matrix.node-version` key above.
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       # This step runs `npm ci` to install any dependencies listed in your `package.json` file.
