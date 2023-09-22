@@ -1,3 +1,14 @@
+import Banner from "../components/Banner";
+import Menu from "../components/Menu";
+
 export default function Page() {
-  return <h1>welcome to next.js!</h1>;
+  return (
+    <div>
+      <Menu />
+      <Banner />
+      <div title="lectureList">
+        <h1>강의 목록</h1>
+      </div>
+    </div>
+  );
 }

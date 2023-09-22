@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import Home from "../src/app/page";
+import Detail from "../src/app/detail/page";
 import "@testing-library/jest-dom";
 
-describe("Home", () => {
+describe("Detail", () => {
   it("메뉴가 렌더링 되어야 한다.", () => {
-    const { getByRole } = render(<Home />);
+    const { getByRole } = render(<Detail />);
 
     const menu = getByRole("navigation", { name: "fastcampus" });
 
@@ -12,17 +12,17 @@ describe("Home", () => {
   });
 
   it("배너가 렌더링 되어야 한다.", () => {
-    const { getByRole } = render(<Home />);
+    const { getByRole } = render(<Detail />);
 
     const banner = getByRole("banner", { name: "" });
 
     expect(banner).toBeInTheDocument();
   });
 
-  it("강의 목록이 렌더링 되어야 한다.", () => {
-    const { getByTitle } = render(<Home />);
-    const lectureList = getByTitle("lectureList", { name: "" });
+  it("강의 상세가 렌더링 되어야 한다.", () => {
+    const { getByTitle } = render(<Detail />);
+    const lectureDetail = getByTitle("lectureDetail", { name: "" });
 
-    expect(lectureList).toBeInTheDocument();
+    expect(lectureDetail).toBeInTheDocument();
   });
 });
