@@ -1,16 +1,20 @@
 import React from "react";
+import { Lecture } from "../../../interface/Lecture";
+import TagList from "../tags/TagList";
 
-type LectureItemProps = {};
+interface LectureItemProps {
+  lecture: Lecture;
+}
 
-const LectureItem = (props: LectureItemProps) => {
+const LectureItem = ({ lecture }: LectureItemProps) => {
   return (
     <div>
-      <img src="" alt="초격차 패키지" />
-      <span>평생소장</span>
-      <h3>일러스트레이터들을 위한 Stable Diffusion과 포토샵 활용법</h3>
-      <p>
-        Stable diffusion부터 포토샵까지! 반복 업무 지옥에서 해방시켜줄 AI 활용법
-      </p>
+      <img src={lecture.thumb} alt="초격차 패키지" />
+      <span>
+        <TagList tags={lecture.tags} />
+      </span>
+      <h3>{lecture.title}</h3>
+      <p>{lecture.description}</p>
     </div>
   );
 };

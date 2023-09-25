@@ -13,6 +13,7 @@
     "docker": "docker build -t fastcampus-site ."
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.35.3",
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
