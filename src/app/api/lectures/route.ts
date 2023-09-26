@@ -59,6 +59,27 @@ const leacturesData = {
   ]
 };
 
+const leacturesDataScience = {
+  lectureList: [
+    {
+      id: 0,
+      category: mockCategory,
+      title:
+        "DataScience일러스트레이터들을 위한 Stable Diffusion과 포토샵 활용법",
+      tags: mockTags,
+      description:
+        "Stable diffusion부터 포토샵까지! 반복 업무 지옥에서 해방시켜줄 AI 활용법",
+      thumb: "/thumb.jpg",
+      isHot: true,
+      isNew: true
+    }
+  ]
+};
 export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+
+  if (searchParams.get("categories") === "DataScience") {
+    return NextResponse.json(leacturesDataScience);
+  }
   return NextResponse.json(leacturesData);
 }
